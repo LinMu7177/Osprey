@@ -7,7 +7,6 @@ from .clip import CLIP
 class CLIPVisionTower(nn.Module):
     def __init__(self, args, img_size=512, delay_load=False):
         super().__init__()
-
         # test
         if hasattr(args, 'mm_vision_tower'):
             self.clip_model = args.mm_vision_tower

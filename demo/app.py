@@ -289,11 +289,11 @@ with gr.Blocks(title="Osprey") as demo:
     [os.path.join(os.path.dirname(__file__), 'examples/starbucks.jpg')],
     [os.path.join(os.path.dirname(__file__), 'examples/olympic.jpg')],
     [os.path.join(os.path.dirname(__file__), 'examples/baseball.jpg')],
-    [os.path.join(os.path.dirname(__file__), 'examples/roller_coaster.jpg')],
-    [os.path.join(os.path.dirname(__file__), 'examples/fountain.jpg')],
-    [os.path.join(os.path.dirname(__file__), 'examples/mirror.jpg')],
-    [os.path.join(os.path.dirname(__file__), 'examples/santa.jpg')],
-    [os.path.join(os.path.dirname(__file__), 'examples/costume.jpg')]
+    [os.path.join(os.path.dirname(__file__), 'examples/roller_coaster.jpg')]
+    # [os.path.join(os.path.dirname(__file__), 'examples/fountain.jpg')],
+    # [os.path.join(os.path.dirname(__file__), 'examples/mirror.jpg')],
+    # [os.path.join(os.path.dirname(__file__), 'examples/santa.jpg')],
+    # [os.path.join(os.path.dirname(__file__), 'examples/costume.jpg')]
   ]
 
   descrip_point = """
@@ -498,4 +498,4 @@ with gr.Blocks(title="Osprey") as demo:
     [output_text_2]
   )
 
-demo.queue(concurrency_count=1).launch(debug=True, server_port=8002)
+demo.queue(concurrency_count=1).launch(debug=True, share=True, server_port=8002)

@@ -5,7 +5,7 @@ import torch
 from segment_anything import SamPredictor, sam_model_registry, SamAutomaticMaskGenerator
 
 models = {
-  'vit_b': './checkpoints/sam_vit_b_01ec64.pth',
+  'vit_b': '/mnt/local/wwx/ckpts/osprey/SAM/sam_vit_b_01ec64.pth',
   'vit_l': './checkpoints/sam_vit_l_0b3195.pth',
   'vit_h': './checkpoints/sam_vit_h_4b8939.pth'
 }
